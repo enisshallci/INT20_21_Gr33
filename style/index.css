@@ -3,7 +3,7 @@
     padding: 0;
 }
 header{
-    background-image:url(../images/header1.jpeg);
+    background-image: url(../images/header.jpg);
     height: 10vh;
     background-size: cover;
     background-position: center;
@@ -24,7 +24,10 @@ ul li a {
     text-decoration: none;
     color: #fff;
     padding: 10px 25px;
-    border: 2px solid #fff;
+    border: 2px solid transparent;
+    transition: 0.8s ease;
+    font-size: 1.5em;
+    
 }
 
 ul li a.link1:hover{
@@ -39,9 +42,17 @@ ul li a.link3:hover{
     background-color:rgb(26, 182, 96);
 }
 ul li a.link4:hover{
-    background-color: rgb(252, 187, 66);
+    background-color: rgb(228, 149, 3);
 }
 
 ul li a.link1{
     background-color:DodgerBlue;
+}
+
+.logo img{
+    float:left;
+    width: 150px;
+    height:auto;
+    margin-left: 30px;
+    
 }
