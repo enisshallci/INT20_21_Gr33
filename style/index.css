@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-image:url(../images/header1.jpeg);
+    height: 10vh;
+    background-size: cover;
+    background-position: center;
+}
+
+ul{
+    list-style-type:none;
+    float: right;
+    margin-top: 25px;
+    margin-right: 20px;
+}
+ul li{
+    display: inline-block;
+    padding: 10px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 25px;
+    border: 2px solid #fff;
+}
+
+ul li a.link1:hover{
+    background-color: DodgerBlue;
+}
+
+ul li a.link2:hover{
+    background-color:rgb(236, 69, 40);
+}
+
+ul li a.link3:hover{
+    background-color:rgb(26, 182, 96);
+}
+ul li a.link4:hover{
+    background-color: rgb(252, 187, 66);
+}
+
+ul li a.link1{
+    background-color:DodgerBlue;
+}
