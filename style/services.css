@@ -31,12 +31,12 @@ ul li a {
 }
 
 ul li a.link1:hover{
-    background-color: #fff;
-    color:black;
+    background-color: DodgerBlue;
 }
 
 ul li a.link2:hover{
-    background-color:DodgerBlue;
+    background-color:#fff;
+    color:black;
 }
 
 ul li a.link3:hover{
@@ -46,7 +46,7 @@ ul li a.link4:hover{
     background-color: DodgerBlue;
 }
 
-ul li a.link1{
+ul li a.link2{
     background-color:rgb(7, 148, 70);
 }
 
