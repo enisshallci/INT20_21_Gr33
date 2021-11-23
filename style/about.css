@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-image: url(../images/header.jpg);
+    height: 10vh;
+    background-size: cover;
+    background-position: center;
+}
+
+ul{
+    list-style-type:none;
+    float: right;
+    margin-top: 25px;
+    margin-right: 20px;
+}
+ul li{
+    display: inline-block;
+    padding: 10px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 25px;
+    border: 2px solid #fff;
+    transition: 0.8s ease;
+    font-size: 1.5em;
+    
+}
+
+ul li a.link3:hover{
+    background-color: #fff;
+    color:black;
+}
+
+ul li a.link2:hover{
+    background-color:DodgerBlue;
+}
+
+ul li a.link4:hover{
+    background-color:DodgerBlue;
+}
+ul li a.link1:hover{
+    background-color: DodgerBlue;
+}
+
+ul li a.link3{
+    background-color:rgb(7, 148, 70);
+}
+
+.logo img{
+    float:left;
+    width: 150px;
+    height:auto;
+    margin-left: 30px;
+    
+}
