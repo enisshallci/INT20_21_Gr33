@@ -3,6 +3,7 @@
     padding: 0;
 }
 header{
+    position: fixed;
     background-image: url(../images/header.jpg);
     height: 10vh;
     background-size: cover;
@@ -82,6 +83,8 @@ section{
 
 .content{
     position: relative;
+    max-width: 40%;
+    margin:auto;
     margin-top: 70px;
     text-align: center;
     width: 100%;
@@ -98,3 +101,13 @@ section.picture2{
     width: 100%;
     height:500px;
 }
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    margin-top: 70px;
+    height: 5vh;
+    width: 100%;
+    background-color:rgb(5, 65, 126);
+} 
