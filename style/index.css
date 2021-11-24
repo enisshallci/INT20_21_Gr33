@@ -7,6 +7,7 @@ header{
     height: 10vh;
     background-size: cover;
     background-position: center;
+    position: sticky;
 }
 
 ul{
@@ -56,4 +57,44 @@ ul li a.link1{
     height:auto;
     margin-left: 30px;
     
+}
+
+article{
+    margin-top: 70px;
+}
+article > img{
+ 
+    width: 100%;
+    height:500px;
+}
+
+.title{
+    position:absolute;
+    margin-left: 35%;
+    margin-top: 150px;
+    color:rgb(10, 92, 175);
+   
+}
+
+section{
+    width: 100%;
+}
+
+.content{
+    position: relative;
+    margin-top: 70px;
+    text-align: center;
+    width: 100%;
+}
+
+section.picture2{
+    margin-top: 70px;
+    width: 100%;
+    height: auto;
+    left: 40%;
+}
+
+.picture2 img{
+    width: 100%;
+    height:500px;
 }
