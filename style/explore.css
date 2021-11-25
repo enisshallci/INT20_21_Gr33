@@ -57,3 +57,59 @@ ul li a.link2{
     margin-left: 30px;
     
 }
+/*--------------------------------------*/
+
+.section1{
+    margin-top: 70px;
+}
+
+.title{
+    position:absolute;
+    margin-left: 28%;
+    margin-top: 150px;
+    color:rgb(10, 92, 175);
+  
+}
+
+.content{
+    width: 60%;
+    position: absolute;
+    padding:18px;
+}
+
+.section2{
+    margin-top: 70px;
+}
+
+fieldset{
+    margin:30px;
+}
+
+figure.rocky{
+    float:right; 
+    padding: 18px;
+}
+
+figure a{
+    color: #000;
+}
+
+/*--------------------------------------*/
+
+.section3{
+    margin-top: 70px;
+}
+
+.article2{
+    padding: 20px;
+}
+
+figure.thunder{
+    float:left;
+    padding:18px;
+}
+
+p{
+    font-size: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
