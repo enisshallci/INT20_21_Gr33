@@ -1,6 +1,5 @@
 *{
     margin: 0;
-    padding: 0;
 }
 header{
     background-image: url(../images/header.jpg);
@@ -9,18 +8,18 @@ header{
     background-position: center;
 }
 
-ul{
+header ul{
     list-style-type:none;
     float: right;
     margin-top: 25px;
     margin-right: 20px;
 }
-ul li{
+header ul li{
     display: inline-block;
     padding: 10px;
 }
 
-ul li a {
+header ul li a {
     text-decoration: none;
     color: #fff;
     padding: 10px 25px;
@@ -29,23 +28,23 @@ ul li a {
     font-size: 1.5em;
 }
 
-ul li a.link1:hover{
+header ul li a.link1:hover{
     background-color: DodgerBlue;
 }
 
-ul li a.link2:hover{
+header ul li a.link2:hover{
     background-color:#fff;
     color:black;
 }
 
-ul li a.link3:hover{
+header ul li a.link3:hover{
     background-color:DodgerBlue;
 }
-ul li a.link4:hover{
+header ul li a.link4:hover{
     background-color: DodgerBlue;
 }
 
-ul li a.link2{
+header ul li a.link2{
     background-color:rgb(7, 148, 70);
 }
 
@@ -69,7 +68,7 @@ ul li a.link2{
   
 }
 
-.content{
+.content1{
     width: 60%;
     position: absolute;
     padding:18px;
@@ -115,3 +114,20 @@ p{
     font-size: 20px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+.content2{
+    width: 60%;
+    float: right;
+    padding: 18px;
+}
+
+footer{
+    padding-top: 5px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    margin-top: 70px;
+    height: 5vh;
+    width: 100%;
+    background-color:rgb(5, 65, 126);
+} 
