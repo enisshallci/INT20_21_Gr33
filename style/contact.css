@@ -30,9 +30,13 @@ ul li a {
     
 }
 
-ul li a.link4:hover{
+ul li a.link5:hover{
     background-color: #fff;
     color:black;
+}
+
+ul li a.link1:hover{
+    background-color:DodgerBlue;
 }
 
 ul li a.link2:hover{
@@ -40,13 +44,14 @@ ul li a.link2:hover{
 }
 
 ul li a.link3:hover{
-    background-color:DodgerBlue;
-}
-ul li a.link1:hover{
     background-color: DodgerBlue;
 }
 
-ul li a.link4{
+ul li a.link4:hover{
+    background-color: DodgerBlue;
+}
+
+ul li a.link5{
     background-color:rgb(7, 148, 70);
 }
 
@@ -56,4 +61,53 @@ ul li a.link4{
     height:auto;
     margin-left: 30px;
     
+}
+
+/*--------------------------------------*/
+
+.content{
+    margin-top: 70px;
+    background-image: url(../images/contact.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position:center;
+}
+
+
+h1{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color:#fff;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 80px;
+    margin-top: 60px;
+}
+
+section {
+    position: absolute;
+    top:47%;
+    width: 100%;
+}
+
+.article1{
+    width: 50%;
+    float: left;
+}
+
+h2{
+    color:#faf687;
+    margin-left: 80px;
+    font-size: 40px;
+}
+
+h3{
+    color:#faf687;
+    margin-left: 80px;
+    font-size: 30px;
+}
+
+.article2{
+    width: 50%;
+    float:right;
 }
