@@ -121,6 +121,23 @@ p{
     padding: 18px;
 }
 
+.section3 ul{
+    display: inline-block;
+}
+
+.list-table {
+    width:100%;
+}
+
+
+table{
+    float:right;
+}
+
+table th td{
+    border: 1 px solid black;
+}
+
 footer{
     padding-top: 5px;
     position: fixed;
@@ -131,3 +148,35 @@ footer{
     width: 100%;
     background-color:rgb(5, 65, 126);
 } 
+
+/*--------------------------------------*/
+
+
+.list{
+    margin-top: 20px;
+    width: 20%;
+    float:left;
+    font-size: 22px;
+    font-style: italic;
+}
+
+.list1{
+    margin-top: 20px;
+    width: 20%;
+    float:left;
+    font-size: 22px;
+    font-style: italic;
+}
+
+
+#listt{
+    margin-top: 20px;
+    width: 60%;
+    float:left;
+    font-size: 22px;
+    font-style: italic;
+}
+
+dd{
+    padding-left: 38px;
+}
