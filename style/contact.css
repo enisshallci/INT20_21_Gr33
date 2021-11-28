@@ -84,9 +84,9 @@ h1{
     margin-top: 60px;
 }
 
-section {
+ .section1{
     position: absolute;
-    top:47%;
+    top:37%;
     width: 100%;
 }
 
@@ -96,13 +96,13 @@ section {
 }
 
 h2{
-    color:#faf687;
+    color:#ffffff;
     margin-left: 80px;
     font-size: 40px;
 }
 
 h3{
-    color:#faf687;
+    color:#ffffff;
     margin-left: 80px;
     font-size: 30px;
 }
@@ -110,4 +110,40 @@ h3{
 .article2{
     width: 50%;
     float:right;
+}
+
+ .section2{
+    position: absolute;
+    margin-top:380px;
+    width: 100%;
+}
+
+fieldset{
+    position: absolute;
+    left: 30%;
+    margin: 30px;
+    color:#ffffff;
+    width: 40%;
+}
+
+label{
+    font-size: 26px;
+}
+
+input{
+    width: 60%;
+    padding:12px
+}
+
+button{
+    background-color: rgb(5, 163, 76);
+    color:white;
+    text-align: center;
+    padding:14px 20px;
+    width: 100%;
+}
+
+mark{
+    background-color: dodgerblue;
+    color:white;
 }

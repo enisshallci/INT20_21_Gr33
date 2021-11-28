@@ -55,5 +55,17 @@ ul li a.link3{
     width: 150px;
     height:auto;
     margin-left: 30px;
-    
+}
+/*----------------------------------------*/
+
+.section1{
+    margin-top: 70px;
+}
+
+.title{
+    position:absolute;
+    margin-left: 33.5%;
+    margin-top: 150px;
+    color:rgb(10, 92, 175);
+  
 }
