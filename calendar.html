@@ -6,6 +6,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
     <link rel="stylesheet" type="text/css" href="style/calendar.css">
+    <style>
+*{
+margin: 0;
+padding: 0;
+}
+
+
+/*----------------------------------------*/
+
+.section1{
+    margin-top: 70px;
+}
+
+.title{
+    position:absolute;
+    margin-left: 33.5%;
+    margin-top: 150px;
+    color:rgb(10, 92, 175);
+}
+
+/*-----------------------------------------*/
+
+.content{
+    margin-top: 70px;
+}
+
+h1,h3{
+    text-align: center;
+}
+
+#calendar{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 60%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    margin-left: 20%;
+}
+
+th,td{
+    border: 1px solid rgb(187, 174, 174);
+    padding: 15px;
+}
+
+thead{
+    background-color:dodgerblue;
+    color:white;
+    text-align: left;
+}
+
+tbody,tfoot{
+    background-color:#FFFDD0;
+}
+
+.dollar{
+    text-align: right;
+}
+
+footer{
+    padding-top: 5px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    margin-top: 70px;
+    height: 5vh;
+    width: 100%;
+    background-color:rgb(5, 65, 126);
+} 
+    </style>
 </head>
 <body>
     <header>
@@ -19,6 +87,7 @@
                 <li><a class="link4" href="gallery.html">Gallery</a></li>
                 <li><a class="link4" href="contact.html">Contact</a></li>
             </ul>
+        
     </header>
 
     <section class="section1">
@@ -50,43 +119,43 @@
                     <td>New York, City of Neighborhoods</td>
                     <td><strong> Walking tour of Manhattan</strong></td>
                     <td>February 1 - February 7, 2022</td>
-                    <td>50&#36;</td>
+                    <td class="dollar">50&#36;</td>
                 </tr>
                 <tr>
                     <td>California Pasific Coast Highway</td>
                     <td><i>With two days in San Francisco</i></td>
                     <td>February 26 - February 28,2022</td>
-                    <td>48&#36;</td>
+                    <td class="dollar">48&#36;</td>
                 </tr>
                 <tr>
                     <td>West Virginia- Wild & Active</td>
                     <td><i>Raft,Hike,Zip-line and more</i></td>
                     <td>March 1 - March 6, 2022</td>
-                    <td>55&#36;</td>
+                    <td class="dollar">55&#36;</td>
                 </tr>
                 <tr>
                     <td>Hudson River Valley</td>
                     <td><i>And West Point</i></td>
                     <td>20 March - 30 March, 2022</td>
-                    <td>89.99&#36;</td>
+                    <td class="dollar">89.99&#36;</td>
                 </tr>
                 <tr>
                     <td>Historic Philadelphia and Gettyrsburg</td>
                     <td><q>Including Amish Country and Annapolis</q></td>
                     <td>2 April - 8 April, 2022</td>
-                    <td>99&#36;</td>
+                    <td class="dollar">99&#36;</td>
                 </tr>
                 <tr>
                     <td>Colorado Trains and Mountains</td>
                     <td><q>Whith Three Unique Train Journeys</q></td>
                     <td>20 April - 28 April, 2022</td>
-                    <td>100&#36;</td>
+                    <td class="dollar">100&#36;</td>
                 </tr>
                 <tr>
                     <td rowspan="2"><b><u>Dude Ranch Experience</u></b></td>
                     <td>In Montana's Big Sky Country</td>
                     <td>2 May - 15 May,2022</td>
-                    <td rowspan="2">120&#36;</td>
+                    <td rowspan="2" class="dollar">120&#36;</td>
                 </tr>
                 <tr>
                     
@@ -98,7 +167,7 @@
                     <td>America's Heartland</td>
                     <td><q>Oklahoma city, Kansas City & St. Louis</q></td>
                     <td>20 May - 30 May,2022</td>
-                    <td>120&#36;</td>
+                    <td class="dollar">120&#36;</td>
                 </tr>
                 <tr>
                     <td colspan="4" style="text-align: center;"><b>Moderate difficulty hikes</b> </td>
@@ -107,13 +176,13 @@
                     <td>Shenandoah National Park</td>
                     <td>& America's founding Fathers</td>
                     <td>5 June - 8 June,2022</td>
-                    <td>45&#36;</td>
+                    <td class="dollar">45&#36;</td>
                 </tr>
                 <tr>
                     <td rowspan="2"><b><u>Seattle and Olympic National Park</u></b></td>
                     <td>Snowcapped peaks and rain forests</td>
                     <td>30 July - 6 August,2022</td>
-                    <td rowspan="2">34&#36;</td>
+                    <td class="dollar" rowspan="2">34&#36;</td>
                 </tr>
                 <tr>
 
@@ -123,13 +192,13 @@
                     <td>Mount Rashmore & Crazy Horse</td>
                     <td><strong>Including a Buffalo Photo Safari</strong></td>
                     <td>11 September - 17 September,2022</td>
-                    <td>35&#36;</td>
+                    <td class="dollar">35&#36;</td>
                 </tr>
                 <tr>
                     <td>Nigara Falls and the Canadian Side</td>
                     <td><strong>Plus Corning Glass and NY Finger Lakes</strong></td>
                     <td>10 November - 15 November,2022</td>
-                    <td>35&#36;</td>
+                    <td class="dollar">35&#36;</td>
                 </tr>
             </tbody>
 

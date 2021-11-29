@@ -130,9 +130,23 @@ label{
     font-size: 26px;
 }
 
-input{
+input[type=text]{
     width: 60%;
-    padding:12px
+    padding:12px;
+}
+
+input[type=email] {
+    margin-left: 43px;
+    width: 60%;
+    padding:12px;
+}
+
+input[type=radio]{
+margin-left:33px;
+}
+
+textarea{
+    margin-left:20px;
 }
 
 button{
