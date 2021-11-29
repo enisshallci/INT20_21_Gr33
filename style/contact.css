@@ -68,7 +68,7 @@ ul li a.link5{
 .content{
     margin-top: 70px;
     background-image: url(../images/contact.jpg);
-    height: 100vh;
+    height: 120vh;
     background-size: cover;
     background-position:center;
 }
@@ -112,9 +112,9 @@ h3{
     float:right;
 }
 
- .section2{
+ #section2{
     position: absolute;
-    margin-top:380px;
+    margin-top:480px;
     width: 100%;
 }
 
