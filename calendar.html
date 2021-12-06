@@ -15,11 +15,11 @@ padding: 0;
 
 /*----------------------------------------*/
 
-.section1{
+#section1{
     margin-top: 70px;
 }
 
-.title{
+#title{
     position:absolute;
     margin-left: 33.5%;
     margin-top: 150px;
@@ -28,8 +28,10 @@ padding: 0;
 
 /*-----------------------------------------*/
 
-.content{
+#content{
     margin-top: 70px;
+    margin-bottom: 116px;
+
 }
 
 h1,h3{
@@ -77,26 +79,25 @@ footer{
 </head>
 <body>
     <header>
-            <div class="logo">
+            <div id="logo">
                 <img  src="images/logo1.png">
             </div>
             <ul>
-                <li><a class="link1" href="index.html">Home</a></li>
-                <li><a class="link2" href="explore.html">Explore</a></li>
-                <li><a class="link3" href="calendar.html">Calendar</a></li>
-                <li><a class="link4" href="contact.html">Contact</a></li>
+                <li><a id="link1" href="index.html">Home</a></li>
+                <li><a id="link2" href="explore.html">Explore</a></li>
+                <li><a id="link3" href="calendar.html">Calendar</a></li>
+                <li><a id="link4" href="contact.html">Contact</a></li>
             </ul>
-        
     </header>
 
-    <section class="section1">
-        <div class="title"><h1 style="font-family: 'Courier New', Courier, monospace;color:#fff; font-size: 80px;text-align: center;">TOUR CALENDAR</h1>
+    <section id="section1">
+        <div id="title"><h1 style="font-family: 'Courier New', Courier, monospace;color:#fff; font-size: 80px;text-align: center;">TOUR CALENDAR</h1>
         <h3 style="font-family: 'Courier New', Courier, monospace;color:#ffffff;text-align: center;">HIKE AND CLIMB</h3>
         </div>
         <img src="images/calendar.jpg" height="500px" width="100%"> 
     </section>
     
-    <div class="content">
+    <div id="content">
         <h1>SCHEDULED JOURNEYS & ADVENTURES</h1>
         <h3>See what we are planning</h3>
 
@@ -210,18 +211,8 @@ footer{
         </table>
     </div>
 
- 
-
-   <br />
-   <br />
-   <br />
-   <br />
-   <br />
-   <br />
-
     <footer>
-        <p style="text-align: center;font-size: 20px;color:#fff; padding-top: 10px;font-style: oblique;     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        ">HIKE AND CLIMB 2021 &copy;</p>
+        <p style="text-align: center;font-size: 20px;color:#fff; padding-top: 10px;font-style: oblique;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">HIKE AND CLIMB 2021 &copy;</p>
     </footer>
 
 </body>

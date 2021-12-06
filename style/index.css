@@ -1,13 +1,12 @@
 *{
     margin: 0;
 }
+
 header{
-    position: fixed;
     background-image: url(../images/header.jpg);
     height: 10vh;
-    background-size: cover;
     background-position: center;
-    position: sticky;
+ 
 }
 
 ul{
@@ -16,38 +15,38 @@ ul{
     margin-top: 25px;
     margin-right: 20px;
 }
+
 ul li{
     display: inline-block;
     padding: 10px;
 }
 
-ul li a {
+ul li a{
     text-decoration: none;
     color: #fff;
     padding: 10px 25px;
     border: 2px solid #fff;
     transition: 0.8s ease;
     font-size: 1.5em;
-    
 }
 
-ul li a.link1:hover{
+ul li a#link1:hover{
     background-color: #fff;
     color:black;
 }
 
-ul li a.link2:hover{
+ul li a#link2:hover{
     background-color:DodgerBlue;
 }
 
-ul li a.link3:hover{
+ul li a#link3:hover{
     background-color:DodgerBlue;
 }
-ul li a.link4:hover{
+ul li a#link4:hover{
     background-color: DodgerBlue;
 }
 
-ul li a.link1{
+ul li a#link1{
     background-color:rgb(7, 148, 70);
 }
 
@@ -56,6 +55,5 @@ ul li a.link1{
     width: 150px;
     height:auto;
     margin-left: 30px;
-    
 }
 

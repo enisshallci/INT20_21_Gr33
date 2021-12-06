@@ -28,27 +28,27 @@ header ul li a {
     font-size: 1.5em;
 }
 
-header ul li a.link1:hover{
+header ul li a#link1:hover{
     background-color: DodgerBlue;
 }
 
-header ul li a.link2:hover{
+header ul li a#link2:hover{
     background-color:#fff;
     color:black;
 }
 
-header ul li a.link3:hover{
+header ul li a#link3:hover{
     background-color:DodgerBlue;
 }
-header ul li a.link4:hover{
+header ul li a#link4:hover{
     background-color: DodgerBlue;
 }
 
-header ul li a.link2{
+header ul li a#link2{
     background-color:rgb(7, 148, 70);
 }
 
-.logo img{
+#logo img{
     float:left;
     width: 150px;
     height:auto;
@@ -76,10 +76,6 @@ header ul li a.link2{
     padding:18px;
 }
 
-.section2{
-    margin-top: 70px;
-}
-
 .mountain{
     color:rgb(8, 160, 41);
     font-weight: bold;
@@ -101,10 +97,6 @@ figure a{
     }
 
 /*--------------------------------------*/
-
-.section3{
-    margin-top: 70px;
-}
 
 .article2{
     padding: 20px;
@@ -128,7 +120,7 @@ span, p{
     padding: 18px;
 }
 
-.section3 ul{
+.section1 ul{
     display: inline-block;
 }
 
@@ -163,26 +155,27 @@ footer{
 
 /*--------------------------------------*/
 
-.list-table{
+#list-table{
     margin-top: 5px;;
 }
 
-.list{
+#list{
+    margin-top: 20px;
+    width: 20%;
+    float:left;
+    font-size: 22px;
+    font-style: italic;
+    margin-bottom: 116px;
+
+}
+
+#list1{
     margin-top: 20px;
     width: 20%;
     float:left;
     font-size: 22px;
     font-style: italic;
 }
-
-.list1{
-    margin-top: 20px;
-    width: 20%;
-    float:left;
-    font-size: 22px;
-    font-style: italic;
-}
-
 
 #listt{
     margin-top: 20px;
@@ -198,4 +191,8 @@ footer{
 
 dd{
     padding-left: 38px;
+}
+
+h4 , h5{
+    font-size: 18px;
 }
