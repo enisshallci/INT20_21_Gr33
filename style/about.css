@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+}
+header{
+    background-image: url(../images/header.jpg);
+    height: 10vh;
+    background-size: cover;
+    background-position: center;
+}
+
+header ul{
+    list-style-type:none;
+    float: right;
+    margin-top: 25px;
+    margin-right: 20px;
+}
+header ul li{
+    display: inline-block;
+    padding: 10px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 25px;
+    border: 2px solid #fff;
+    transition: 0.8s ease;
+    font-size: 1.5em;
+}
+
+header ul li a#link1:hover{
+    background-color: DodgerBlue;
+}
+
+header ul li a#link4:hover{
+    background-color:#fff;
+    color:black;
+}   
+
+header ul li a#link2:hover{
+    background-color:DodgerBlue;
+}
+
+header ul li a#link3:hover{
+    background-color:DodgerBlue;
+}
+
+
+header ul li a#link5:hover{
+    background-color:DodgerBlue;
+}
+
+header ul li a#link4{
+    background-color:rgb(7, 148, 70);
+}
+
+#logo img{
+    float:left;
+    width: 150px;
+    height:auto;
+    margin-left: 30px;
+}
+
+/* ---------------------------------------- */
+
+.section1{
+    margin-top: 70px;
+}
+
+
+#video1{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*-------------------------------------------*/
+
+.section2{
+    margin-top: 70px;
+}
+.section2:after{
+    
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.column{
+    margin-left: 5px;
+    float: left;
+    width: 33%;
+}
+
+.content1{
+    background-image:url(../images/backround2.jpg);
+    background-size: 150px 200px;
+    background-repeat:space;
+
+}
+
+#video2{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p{
+   padding-left: 5px;
+    font-size: 20px;
+    color:black;
+}
