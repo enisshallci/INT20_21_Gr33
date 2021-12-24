@@ -171,6 +171,7 @@ footer{
     font-size: 22px;
     font-style: italic;
     margin-bottom: 116px;
+    background:#cce5ff;
 
 }
 
@@ -180,6 +181,16 @@ footer{
     float:left;
     font-size: 22px;
     font-style: italic;
+    background:#cce5ff;
+
+}
+
+#list1 ol{ 
+    list-style-position: inside;
+}
+
+#list1 ol li{
+    background:#cce5ff;
 }
 
 #listt{
@@ -194,8 +205,14 @@ footer{
     font-weight: bold;
 }
 
+dt{
+    background: #3399ff;
+}
+
 dd{
+    background:#cce5ff;
     padding-left: 38px;
+
 }
 
 h4 , h5{
