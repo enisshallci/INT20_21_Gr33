@@ -7,12 +7,24 @@
     <title>Explore</title>
     <link rel="stylesheet" type="text/css" href="style/explore.css">
 
-    <style>
+    <script type="text/javascript">                            //script
+        function functionUpperCase(){
+            let fjalet = document.getElementById('upper').innerHTML;
+            let fjalet1 = fjalet.toUpperCase();
+            document.getElementById('upper').innerHTML = fjalet1;
+        }
 
- 
-    </style>
+        function functionConcat(){
+            let fjala1 = 'Mount ';
+            let fjala2 = 'Lassen ';
+            let fjalet = fjala1.concat(fjala2);
+
+            document.getElementById("concatt").innerHTML = fjalet;
+        }
+    </script>
+    
 </head>
-<body>
+<body onload=" functionUpperCase();functionConcat()">
     <header>
         <div id="logo">
             <img src="images/logo1.png">
@@ -72,10 +84,11 @@
                         <h2><u>LASSEN VOLCANIC NATIONAL PARK</u></h2>
                         <h5>Explore the southern trip of the CASCADES RANGE with <abbr title="HIKE AND CLIMB">HC</abbr></h5>
                         <br />
-                        <p><img src="images/trip1.jpg" style="float: right;"width="170px" height="170px">In the <span style="color:dodgerblue;font-weight: bold;">NORTHERN CALIFORNIA</span> the Sierra Nevada Mountains(home to Yosemite National Park,
+                        <p><img src="images/trip1.jpg" style="float: right;"width="170px" height="170px">In the <span style="color:dodgerblue;font-weight: bold;">NORTHERN CALIFORNIA</span> the
+                         <span id="upper">Sierra Nevada</span> Mountains (home to Yosemite National Park,            <!--<<<<<---Script ka ktu-->       
                              Sequoia-Kings Canyon <abbr title="NATIONAL PAKR" style="color: dodgerblue;">NP</abbr>,
                              Lake Tahoe and more America mountain gems) give way to the beginning of Cascades.The Cascades are a string of volcanic and non volcanic mountains
-                             running on north-south axis from California to British Columbia. <span class="mountain"> Mount Lassen </span>is the most southerly part of the Cascade Range, wich is park of what makes
+              <!--script-->  running on north-south axis from California to British Columbia. <span id = "concatt"class="mountain"> </span>is the most southerly part of the Cascade Range, wich is park of what makes
                              it tremendously unique <abbr title="NATIONAL PARK" style="color: dodgerblue;">NP</abbr>.</p>
                         <br />
 
@@ -129,7 +142,8 @@
 
                     <figure class="thunder">
                         <a href="https://www.youtube.com/watch?v=1VyhG3ypG5s" target="_blank"><img src="images/lassen1.jpg" alt="Lassen Volcanic National Park" width="600px" height="350px" ></a>
-                        <a href="https://en.wikipedia.org/wiki/Lassen_Volcanic_National_Park"><figcaption style="text-align: center;text-decoration: underline; color:dodgerblue;text-transform: uppercase;">Lassen volcanic national park &#127754;</figcaption></a>
+                        <a href="https://en.wikipedia.org/wiki/Lassen_Volcanic_National_Park"><figcaption style="text-align: center;text-decoration: underline; color:dodgerblue;text-transform: uppercase;">
+                            Lassen volcanic national park &#127754;</figcaption></a>
                     </figure>
                 </fieldset>
     </section>

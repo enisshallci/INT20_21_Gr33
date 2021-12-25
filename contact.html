@@ -19,6 +19,13 @@
                 <li><a id="link4" href="about.html">About Us</a></li>
                 <li><a id="link5" href="contact.html">Contact</a></li>
             </ul>
+
+            <script type="text/javascript">
+                window.alert('Please fill out this form');
+
+                var str = "FIEK";
+                console.log(str);
+            </script>
     </header>
 
     <div class="content">
@@ -41,29 +48,30 @@
     </section>
 
     <section id="section2">
-        <fieldset>
-            <legend style="color: #ffffff;font-size: 26px;">Contact Form</legend>
-            <label>First name:</label>
-            <input type="text"> 
-            <br /> <br />
-            <label>Last name:</label>
-            <input type="text">
-            <br /> <br />
-            <label>Email:</label>
-            <input type="email">
-            <br /> <br />
-            <label>Gender:</label>
-            <input type="radio" name="gjinia" value="male">Male
-            <input type="radio" name="gjinia" value="female">Female
-            <br /> <br />
-            <label>Message:</label>
-            <textarea rows="5" cols="63">
-                Write your message
-            </textarea>
-            <br /> <br />
-            <button type="submit" value="Submit">Submit</button>
-
-        </fieldset>
+            <form>
+                <fieldset>
+                <legend style="color: #ffffff;font-size: 30px;">Contact Form</legend>
+                    <label>First name:</label>
+                    <input type="text"> 
+                    <br /> <br />
+                    <label>Last name:</label>
+                    <input type="text">
+                    <br /> <br />
+                    <label>Email:</label>
+                    <input type="email">
+                    <br /> <br />
+                    <label>Gender:</label>
+                    <input type="radio" name="gjinia" value="male">Male
+                    <input type="radio" name="gjinia" value="female">Female
+                    <br /> <br />
+                    <label>Message:</label>
+                    <textarea rows="5" cols="63">
+                        Write your message
+                    </textarea>
+                    <br /> <br />
+                    <button type="submit" value="Submit">Submit</button>
+                </fieldset>
+            </form>
     </section>
 </div>
 
