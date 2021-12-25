@@ -130,10 +130,15 @@ a.linkkk:visited{
     color:green;
 }
     </style>
-
+    
     <script>
-        console.log(Internet);
+        console.log("Internet");
+
+        function datee(){
+            document.getElementById("clickk").innerHTML = Date();
+        }
     </script>
+
     
 </head>
 <body>
@@ -157,11 +162,19 @@ a.linkkk:visited{
         <img src="images/calendar.jpg" height="500px" width="100%"> 
     </section>
     
+
+    
     <div id="content">
         <div id="aside-left">
         <h1>SCHEDULED JOURNEYS & ADVENTURES &#x26FA;</h1>
+      
         </div>
 
+        <div style="text-align: center;margin-top: 30px;font-weight: bold;">
+            <button onclick="datee()" style="color: dodgerblue; padding: 10px 10px;">Current Date and Time</button>
+        
+            <p id="clickk" style="color:dodgerblue"></p>
+        </div>
         <table id="calendar">
             <thead>
                 <tr>
