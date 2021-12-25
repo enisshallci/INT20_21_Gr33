@@ -94,10 +94,11 @@ header ul li a#link4{
 }
 
 .content1{
-    background-image:url(../images/flower1.jpg);
+    background-image:url(../images/flower1.jpg) left top repeat;
     background-size: 150px 150px;
     background-repeat:space;
     background-position: center;
+    background-origin: content-box;
 }
 
 #video2{
@@ -106,9 +107,90 @@ header ul li a#link4{
     margin-right: auto;
 }
 
+#border1{
+    border-style: dotted;
+    text-shadow: 2px 1px rgb(78, 68, 216);}
+
+#border2{
+    border-style: double;
+    text-shadow: 2px 1px rgb(78, 68, 216);
+}
+
 p{
    padding-left: 5px;
    font-weight: bold;
     font-size: 20px;
     color:black;
+}
+
+nav {
+    background-color: #cce5ff;
+    border: 2px solid dodgerblue;
+    border-radius: 15px 50px;
+    box-shadow: 25px 10px 10px rgb(103, 171, 238);
+    margin: 1%;
+
+}
+nav ul{
+    text-align: center;
+}
+
+nav ul li{
+    display: inline-block;
+    font-size: 26px;
+    padding: 1.5em;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: dodgerblue;
+    transition: 0.8s ease;
+    padding: 5px;
+    border: 10px solid transparent;
+    border-image: url(../images/border.jpg) 200 round;
+
+}
+
+nav ul li a:hover{
+    background-color:#fff;
+    color:black;
+}
+
+article{
+    overflow: auto;
+
+}
+
+#wrap{
+    width: 250px;
+    border: 1px solid black;
+    word-wrap: break-word;
+    font-size: 20px;
+    display: block;
+    margin:auto;
+}
+
+.part3{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(../images/trip.png), url(../images/rocky.jpeg);
+    background-position: right bottom, left top ;
+    background-position: center ;
+    background-repeat: no-repeat, no-repeat;
+}
+
+.part3 p {
+    color:white;
+}
+
+.part1{
+    background: radial-gradient(#387989, #6dd5ed);
+}
+
+.part1, .part2, .part3{
+    width: 31.3%;
+    float: left;
+    margin: 1%;
+}
+
+.part3{
+    margin-right: 1%;
 }
