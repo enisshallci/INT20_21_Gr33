@@ -58,3 +58,7 @@ ul li a#link3{
     margin-left: 30px;
 }
 
+audio{
+    display: block;
+    margin:auto;
+}

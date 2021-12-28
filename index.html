@@ -97,9 +97,30 @@ h2{
     <section>
         <article>
            <div id="title"><h1 style="font-family: 'Courier New', Courier, monospace;color:#fff; font-size: 80px;text-align: center;">HIKE AND CLIMB</h1></div>
-            <img src="images/wall.jpg"> 
+            <img src="images/wall.jpg" class="mySlides">
+            <img src="images/explore1.jpg" class="mySlides"> 
+            <img src="images/3.jpg" class="mySlides"> 
         </article>
     </section>
+
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides(){
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            for(i = 0; i < slides.length; i++){
+                slides[i].style.display = "none";
+            }
+            slideIndex ++;
+            if(slideIndex > slides.length)
+            {slideIndex = 1}
+
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 2000);
+        }
+    </script>
 
     <section>
         <div id="content">
@@ -125,7 +146,7 @@ h2{
             <br />             <br />
 
             <h3>In which years have you traveled with us</h3>
-            <form>
+            <form method="post">
                 <input type="checkbox">
                 <label style="font-size: 20px;" name="year1">2017</label>
                 <input type="checkbox">

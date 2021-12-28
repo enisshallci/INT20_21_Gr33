@@ -7,6 +7,7 @@
     <title>About Us</title>
     <link rel="stylesheet" type="text/css" href="style/about.css">
 </head>
+
 <body>
     
     <header>
@@ -49,7 +50,49 @@
         </div>
 
         <div class="part2">
-            <h1>part2</h1>
+           <canvas height="100" width="600" style="border: 2px dodgerblue double;">
+           
+        </canvas>
+
+        <script>
+            var kanvas = document.querySelector("canvas");
+        
+            //gjysemrrethi1
+            var konteks = kanvas.getContext("2d");
+            konteks.beginPath();
+            konteks.arc(85,100,40,0, 2 * Math.PI);
+            konteks.fillStyle='dodgerblue';
+            konteks.fill();
+            konteks.lineWidth = 5;
+            konteks.stroke();
+        
+            //gjysemrrethi2
+            var konteks2 = kanvas.getContext("2d");
+            konteks2.beginPath();
+            konteks2.arc(225,0,40,0, 2 * Math.PI);
+            konteks2.fillStyle='dodgerblue';
+            konteks2.fill();
+            konteks2.lineWidth = 5;
+            konteks2.stroke();
+            //3
+            var konteks2 = kanvas.getContext("2d");
+            konteks2.beginPath();
+            konteks2.arc(405,0,40,0, 2 * Math.PI);
+            konteks2.fillStyle='dodgerblue';
+            konteks2.fill();
+            konteks2.lineWidth = 5;
+            konteks2.stroke();
+            //4
+            var konteks = kanvas.getContext("2d");
+            konteks.beginPath();
+            konteks.arc(500,100,40,0, 2 * Math.PI);
+            konteks.fillStyle='dodgerblue';
+            konteks.fill();
+            konteks.lineWidth = 5;
+            konteks.stroke();
+        
+        </script>
+        
         </div>
 
         <div class="part3">
