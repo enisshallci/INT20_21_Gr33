@@ -94,11 +94,12 @@ header ul li a#link4{
 }
 
 .content1{
-    background-image:url(../images/flower1.jpg) left top repeat;
+    background-image:url(../images/flower1.jpg);
     background-size: 150px 150px;
     background-repeat:space;
-    background-position: center;
     background-origin: content-box;
+    background-position: center;
+
 }
 
 #video2{

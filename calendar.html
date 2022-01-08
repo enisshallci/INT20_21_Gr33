@@ -12,123 +12,66 @@ margin: 0;
 padding: 0;
 }
 
-
-/*----------------------------------------*/
-
-#section1{
-    margin-top: 70px;
-}
-
-#title{
-    position:absolute;
-    margin-left: 33.5%;
-    margin-top: 150px;
-    color:rgb(10, 92, 175);
-}
-
-/*-----------------------------------------*/
-
-#content{
-    margin-top: 70px;
-    margin-bottom: 116px;
-
-}
-
-#aside-left{
-    position: relative;
-    background-image: url(images/a.png);
-    background-attachment: fixed;
-    background-position: center;
+header{
+    background-image: url(images/header.jpg);
+    height: 10vh;
     background-size: cover;
-    width: 50%;
-    height: 250px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
+    background-position: center;
 }
 
-#aside-left h1{
-    position: absolute;
-    top:50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+ul{
+    list-style-type:none;
+    float: right;
+    margin-top: 25px;
+    margin-right: 20px;
+}
+
+ul li{
+    display: inline-block;
+    padding: 10px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 25px;
+    border: 2px solid #fff;
+    transition: 0.8s ease;
+    font-size: 1.5em;
+}
+
+ul li a#link3:hover{
+    background-color: #fff;
     color:black;
 }
 
-h1, h3{
-    text-align: center;
+ul li a#link1:hover{
+    background-color:DodgerBlue;
 }
 
-#calendar{
-    font-family: Arial, Helvetica, sans-serif;
-    width: 60%;
-    margin-top: 20px;
-    margin-left: 20%;
+ul li a#link2:hover{
+    background-color:DodgerBlue;
 }
 
-table,th,td{
-    border: 1px solid rgb(187, 174, 174);
-    padding: 15px;
-    border-spacing: 5px;
+ul li a#link4:hover{
+    background-color:DodgerBlue;
 }
 
-thead{
-    background-color:dodgerblue;
-    color:white;
-    text-align: left;
+ul li a#link5:hover{
+    background-color: DodgerBlue;
 }
 
-tbody,tfoot{
-    background-color:#FFFDD0;
+ul li a#link3{
+    background-color:rgb(7, 148, 70);
 }
 
-.dollar{
-    text-align: right;
+#logo img{
+    float:left;
+    width: 150px;
+    height:auto;
+    margin-left: 30px;
 }
 
-footer{
-    padding-top: 5px;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    margin-top: 70px;
-    height: 5vh;
-    width: 100%;
-    background-color:rgb(5, 65, 126);
-} 
-
-a.linkk:link{
-    color:green;
-}
-
-a.linkk:hover{
-    color:green;
-    font-weight: bold;
-    font-size:medium;
-}
-
-a.linkk:visited{
-    color:dodgerblue;
-}
-
-a.linkk:active, a.linkkk:active{
-    background-color: gold;
-}
-
-
-a.linkkk:link{
-    color:dodgerblue;
-}
-
-a.linkkk:hover{
-    color:green;
-    font-weight: bold;
-    font-size:medium;
-}
-
-a.linkkk:visited{
-    color:green;
-}
     </style>
     
     <script>
@@ -156,12 +99,15 @@ a.linkkk:visited{
     </header>
 
     <section id="section1">
-        <div id="title"><h1 style="font-family: 'Courier New', Courier, monospace;color:#fff; font-size: 80px;text-align: center;">TOUR CALENDAR</h1>
-        <h3 style="font-family: 'Courier New', Courier, monospace;color:#ffffff;text-align: center;">HIKE AND CLIMB</h3>
-        <svg height="190" width="500">
-            <polygon points="290,10 250, 190 160, 200" style="fill:green;stroke:black;stroke-width:1"/> 
-        </svg>
-        </div>
+            <div id="title"><h1 style="font-family: 'Courier New', Courier, monospace;color:#fff; font-size: 80px;text-align: center;">TOUR CALENDAR</h1>
+            <h3 style="font-family: 'Courier New', Courier, monospace;color:#ffffff;text-align: center;">HIKE AND CLIMB</h3>
+            </div>
+            
+            <svg height="190" width="900">
+                <polygon points="210,10 250, 190 160, 200" style="fill:rgb(22, 108, 194);stroke:rgb(1, 67, 133);stroke-width:3"/> 
+            </svg>
+            
+        
         <img src="images/calendar.jpg" height="500px" width="100%"> 
     </section>
     
@@ -170,7 +116,6 @@ a.linkkk:visited{
     <div id="content">
         <div id="aside-left">
         <h1>SCHEDULED JOURNEYS & ADVENTURES &#x26FA;</h1>
-      
         </div>
 
         <div style="text-align: center;margin-top: 30px;font-weight: bold;">
