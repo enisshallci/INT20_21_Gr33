@@ -122,6 +122,17 @@ audio{
 svg{
     position: absolute;
     top: 45%;
-    left: 40%;
-    transform: translate(-50,-50);
+  
+}
+
+polygon{
+    animation-name: polygoni;
+    animation-duration: 10s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+}
+
+@keyframes polygoni{
+    from { transform: translateX(-100px)}
+    to {transform: translateX(100%)}
 }

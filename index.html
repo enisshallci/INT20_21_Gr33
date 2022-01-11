@@ -8,75 +8,69 @@
     <link rel="stylesheet" type="text/css" href="style/index.css">
     <style>
     
-article{
-    margin-top: 70px;
+    *{
+    margin: 0;
 }
 
-article img{
-    width: 100%;
-    height:500px;
+header{
+    background-image: url(images/header.jpg);
+    height: 10vh;
+    background-position: center;
 }
 
-#title{
-    position:absolute;
-    margin-left: 35%;
-    margin-top: 150px;
-    color:rgb(10, 92, 175);
+ul{
+    list-style-type:none;
+    float: right;
+    margin-top: 25px;
+    margin-right: 20px;
 }
 
-section{
-    width: 100%;
-}
-
-#content{
-    position: relative;
-    max-width: 40%;
-    margin:auto;
-    margin-top: 70px;
-    text-align: center;
-    width: 100%;
-}
-
-section#picture2{
-    margin-top: 70px;
-    width: 100%;
-    height: auto;
-    left: 40%;
-    margin-bottom: 116px;
-}
-
-#picture2 img{
-    width: 100%;
-    height:500px;
-}
-
-footer{
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    margin-top: 70px;
-    height: 5vh;
-    width: 100%;
-    background-color:rgb(5, 65, 126);
-} 
-
-h2{
+ul li{
     display: inline-block;
+    padding: 10px;
 }
 
-span{
-    font-size:25px;
-    color:rgb(8, 88, 168);
-    font-weight: bold;
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 25px;
+    border: 2px solid #fff;
+    transition: 0.8s ease;
+    font-size: 1.5em;
 }
 
-#outlinee{
-    border: 2px solid black;
-    outline: dodgerblue solid 5px;
+ul li a#link1:hover{
+    background-color: #fff;
+    color:black;
 }
-h2{
-    text-shadow: 1px 1px 1px dodgerblue;
+
+ul li a#link2:hover{
+    background-color:DodgerBlue;
 }
+
+ul li a#link3:hover{
+    background-color:DodgerBlue;
+}
+
+ul li a#link4:hover{
+    background-color:DodgerBlue;
+}
+
+ul li a#link5:hover{
+    background-color: DodgerBlue;
+}
+
+ul li a#link1{
+    background-color:rgb(7, 148, 70);
+}
+
+#logo img{
+    float:left;
+    width: 150px;
+    height:auto;
+    margin-left: 30px;
+}
+
     </style>
 </head>
 <body>
@@ -123,7 +117,28 @@ h2{
 
     <section>
         <div id="content">
+            
+            
+            <a href="contact.html" style="display: block;">
+                <div id = 'rotate'>
+                    <span>HIKE WITH US</span>
+                    <span id="span2">HIKE WITH US</span>
+               
+                </div>
+            </a>
 
+            
+                <div id = "rotate2">
+                <svg height="500" width="500">
+                    <a href="contact.html" style="display: block;">
+                        <g>
+                    <rect x="75" y="32" width="210" height="210" stroke="rgb(5, 82, 158)" stroke-width="2" fill="dodgerBlue"></rect>
+                    <text x="125" y="50" fill="white" font-size="26px" transform="rotate(40,80,22)">CLIMB WITH US</text>
+                    </g>
+                </a>
+                </svg>
+            </div>
+            </a>
             <script>                             //(script)
                 document.write("<h1>Adventure is worthwhile in itself <span> - Amelia Earhart</span></h1>");
             </script>
