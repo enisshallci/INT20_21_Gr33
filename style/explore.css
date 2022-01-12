@@ -223,3 +223,35 @@ h4 , h5{
 audio , h5{
     position: absolute;
 }
+
+h3{
+    font-family:'Courier New', Courier, monospace;
+    color:#ffffff;
+    text-align: center;
+    font-size: 28px;
+}
+
+.title h1, h3{
+   
+    animation:teksti 10s infinite;
+}
+
+@keyframes teksti{
+    0% {color: rgb(202, 30, 30);}
+    25% {color: DodgerBlue;}
+    50% {color: rgb(128, 8, 197);}
+    100% {color: rgb(4, 124, 4);}
+}
+
+
+@font-face{
+    font-family: 'Nautigal';
+    src: url('.fonts/TheNautigal-Regular.ttf');
+    font-style: normal;
+    color:black;
+    
+}
+
+.title h1, h3{
+    font-family: 'Nautigal' !important;
+}

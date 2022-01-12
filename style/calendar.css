@@ -127,12 +127,24 @@ svg{
 
 polygon{
     animation-name: polygoni;
-    animation-duration: 10s;
+    animation-duration: 11s;
     animation-fill-mode: both;
     animation-iteration-count: infinite;
 }
 
 @keyframes polygoni{
-    from { transform: translateX(-100px)}
+    from {transform: translateX(-100px)}
     to {transform: translateX(100%)}
+}
+
+@font-face{
+    font-family: 'Nautigal';
+    src: url('.fonts/TheNautigal-Regular.ttf');
+    font-style: normal;
+    color:black;
+    
+}
+
+#title h1, h3{
+    font-family: 'Nautigal' !important;
 }

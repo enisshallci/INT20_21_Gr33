@@ -119,3 +119,15 @@ rect:hover {
     transform:scale(0.9);
     fill: rgb(7, 148, 70);
 }
+
+@font-face{
+    font-family: 'Nautigal';
+    src: url('.fonts/TheNautigal-Regular.ttf');
+    font-style: normal;
+    color:black;
+    
+}
+
+#title h1, h3{
+    font-family: 'Nautigal' !important;
+}
