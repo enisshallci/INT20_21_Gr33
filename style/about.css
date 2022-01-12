@@ -99,7 +99,6 @@ header ul li a#link4{
     background-repeat:space;
     background-origin: content-box;
     background-position: center;
-
 }
 
 #video2{
@@ -109,11 +108,15 @@ header ul li a#link4{
 }
 
 #border1{
-    border-style: dotted;
+    border: 1px solid black;
+    outline: 3px dashed black;
+    outline-offset: 5px;
     text-shadow: 2px 1px rgb(78, 68, 216);}
 
 #border2{
     border-style: double;
+    outline: 3px dashed black;
+    outline-offset: 5px;
     text-shadow: 2px 1px rgb(78, 68, 216);
 }
 
@@ -130,8 +133,8 @@ nav {
     border-radius: 15px 50px;
     box-shadow: 25px 10px 10px rgb(103, 171, 238);
     margin: 1%;
-
 }
+
 nav ul{
     text-align: center;
 }
@@ -149,7 +152,6 @@ nav ul li a{
     padding: 5px;
     border: 10px solid transparent;
     border-image: url(../images/border.jpg) 200 round;
-
 }
 
 nav ul li a:hover{
@@ -159,7 +161,6 @@ nav ul li a:hover{
 
 article{
     overflow: auto;
-
 }
 
 #wrap{

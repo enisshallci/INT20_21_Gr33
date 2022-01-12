@@ -101,19 +101,31 @@ ul li a#link5{
 
     <div class="content">
 
-        <h1>Contact US</h1>
+        <canvas id="Canvass" width="2000" height="200" style="position: absolute;"> Your browser does not support the canvas element.</canvas>
+
+        <script>
+            var canvas = document.getElementById("Canvass");
+            var ctx = canvas.getContext("2d");
+            ctx.font = "50px Arial";
+            ctx.shadowColor="rgb(190, 190, 190)";
+            ctx.shadowOffsetX = 20;
+            ctx.shadowOffsetY = 10;
+            ctx.shadowBlur = 10;
+            var gradient = ctx.createLinearGradient(0, 0, 150, 100);
+            gradient.addColorStop(0, "rgb(255, 0, 128)");
+            gradient.addColorStop(1, "rgb(255, 153, 51)");
+            ctx.fillStyle = gradient;
+            ctx.fillText("Contact Us", 850, 120);
+
+        </script>
 
     <section class="section1">
         <article class="article1">
-            <h2>Contact Us</h2>
-            <h3>Shoot us an <a href="#section2" style="color:white;text-transform: capitalize;">email</a> or give us a call - we love talking to our guests</h3>
-        </article>
-
-        <article class="article2">
-            <p style="color: #ffffff; font-size: 26px;">You can get ahold of us by phone or email 7 days a week between the hours <q>of 9:00 AM and 4:30 PM </q> Mountain Time. Our Adventure
+            <h3>Shoot us an <a href="#section2" style="text-transform: capitalize; color: black;">email</a> or give us a call - we love talking to our guests</h3>
+            <br />
+            <p style="font-size: 26px;">You can get ahold of us by phone or email 7 days a week between the hours <q>of 9:00 AM and 4:30 PM </q> Mountain Time. Our Adventure
                 Consultants are ready to answer all your questions and if they don't know the answer they'll find it out! Interested in finding
                 out about the availability on a trip or ready to book a trip, you can also look in the Dates section of each trip page to book online! 
-                <!--qitu i qon ne about us-->
             </p>
         </article>
     </section>

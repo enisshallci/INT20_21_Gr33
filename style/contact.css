@@ -1,13 +1,20 @@
 
 
-.content{
-    margin-top: 70px;
-    background-image: url(../images/contact.jpg);
-    height: 120vh;
-    background-size: cover;
-    background-position:center;
-}
 
+.article1{
+    display: block;
+    width: 50%;
+    margin: auto;
+    border: 2px solid;
+    resize: horizontal;
+    overflow: auto;
+    color: black;
+}
+.article1 h3{
+    color:black;
+    margin-left: 80px;
+    font-size: 30px;
+}
 
 h1{
     position: absolute;
@@ -25,34 +32,13 @@ h1{
     width: 100%;
 }
 
-.article1{
-    width: 50%;
-    float: left;
-}
-
-h2{
-    color:#ffffff;
-    margin-left: 80px;
-    font-size: 40px;
-}
-
-h3{
-    color:#ffffff;
-    margin-left: 80px;
-    font-size: 30px;
-}
-
-.article2{
-    width: 50%;
-    float:right;
-}
 
 fieldset{
     position: absolute;
     top: 93%;
     left: 50%;
     transform: translate(-50%,-50%);
-    color:rgb(255, 255, 255);
+    color:black;
     font-weight: bold;
     width: 40%;
 }
@@ -90,15 +76,9 @@ textarea{
 
 button{
     background-color: rgb(5, 163, 76);
-    color:white;
     text-align: center;
     padding:14px 20px;
     width: 100%;
-}
-
-mark{
-    background-color: rgb(160, 202, 243);
-    color:white;
 }
 
 footer{
@@ -111,3 +91,4 @@ footer{
     width: 100%;
     background-color:rgb(5, 65, 126);
 } 
+
