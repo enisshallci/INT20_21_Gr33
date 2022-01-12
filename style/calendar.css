@@ -148,3 +148,16 @@ polygon{
 #title h1, h3{
     font-family: 'Nautigal' !important;
 }
+
+
+#title h1, h3{
+   
+    animation:teksti 10s infinite;
+}
+
+@keyframes teksti{
+    0% {color: rgb(202, 30, 30);}
+    25% {color: rgb(6, 84, 161);}
+    50% {color: rgb(128, 8, 197);}
+    100% {color: rgb(4, 124, 4);}
+}
