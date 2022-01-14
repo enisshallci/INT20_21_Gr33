@@ -70,8 +70,25 @@ ul li a#link1{
     height:auto;
     margin-left: 30px;
 }
+.blue{
+    color:blue;
+}
 
     </style>
+
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>    
+<script type="text/javascript">
+    $("document").ready(function(){
+        $("button").click(function(){
+            $("h1, h2, p").addClass("blue");
+        });
+        $("#button1").click(function(){
+            $("h1, h2, p").removeClass("blue");
+        });
+    });
+</script>
+
 </head>
 <body>
     <header>
@@ -142,6 +159,9 @@ ul li a#link1{
             <script>                             //(script)
                 document.write("<h1>Adventure is worthwhile in itself <span> - Amelia Earhart</span></h1>");
             </script>
+<!----->
+            <button>Click me for colors</button>
+            <button id="button1">Click to remove colors</button>
 
         <h2 style="text-align: center; margin-top: -35px;">An Adventure is when you do not know what is going to happen</h2>
         <br /> <br /> <br />
@@ -193,6 +213,7 @@ ul li a#link1{
     <footer>
         <p style="text-align: center;font-size: 20px;color:#fff; padding-top: 10px;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-style: oblique;">HIKE AND CLIMB 2021 &copy;</p>
     </footer>
+
 
 </body>
 </html>
