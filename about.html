@@ -6,6 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
     <link rel="stylesheet" type="text/css" href="style/about.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>    
+    <script type="text/javascript">
+        $(function()
+            {
+                $("#btn").click(function(){
+                    $("#div1").fadeToggle();
+                    $("#div2").fadeToggle(1000);
+                });
+                $("#btn1").click(function(){
+                    $("#div1").fadeIn();
+                    $("#div2").fadeIn(1000);
+                });
+                $("#btn2").click(function(){
+                    $("#div1").fadeOut();
+                    $("#div2").fadeOut(1000);            
+                });
+            });
+    </script>
+
 </head>
 
 <body>
@@ -42,17 +62,25 @@
         <div class="part1">
             <h1 style="text-align:center;">All-inclusive Hiking Trips</h1>
             <br />
-            <div id = wrap>
+            <div id = "wrap">
             <p>Our hiking and backpacking tours are all-inclusive so guests can relax and focus 100% on enjoying their vacation.
                  We provide gear; local transportation (with a few exceptions); meals; necessary permits;
                  reservations and fees; natural and cultural history interpretation and <span style="color: dodgerblue;">moreeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee!</span></p>
                  </div>
         </div>
-
+<!---------------------->
         <div class="part2">
            <canvas height="100" width="600" style="border: 2px dodgerblue double;">
            
         </canvas>
+        <br /> <br />
+        <button id="btn">Click to display/dismiss div content</button>
+        <button id="btn1">Fade In</button>
+        <button id="btn2">Fade Out</button> <br /><br />
+        <div id="div1" style="width: 100px; height: 100px; background-color:red; color:white;">HIKE</div>
+        <div id="div2" style="width: 100px; height: 100px; background-color:blue; color:white" >CLIMB</div>
+
+        </div>
 
         <script>
             var kanvas = document.querySelector("canvas");

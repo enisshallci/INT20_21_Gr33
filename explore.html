@@ -7,22 +7,26 @@
     <title>Explore</title>
     <link rel="stylesheet" type="text/css" href="style/explore.css">
 
-    <script type="text/javascript">                            //script
-        function functionUpperCase(){
-            let fjalet = document.getElementById('upper').innerHTML;
-            let fjalet1 = fjalet.toUpperCase();
-            document.getElementById('upper').innerHTML = fjalet1;
-        }
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>    
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#hideAddress").click(function (){
 
-        function functionConcat(){
-            let fjala1 = 'Mount ';
-            let fjala2 = 'Lassen ';
-            let fjalet = fjala1.concat(fjala2);
+                $("address").hide();
+                }
+                );
 
-            document.getElementById("concatt").innerHTML = fjalet;
+            $("#showAddress").click(function(){
+
+                $("address").show();
+                }
+                );
+            
         }
+        );
     </script>
-    
+
+
 </head>
 <body onload=" functionUpperCase();functionConcat()">
     <header>
@@ -66,14 +70,21 @@
                             <source src="audio/audio1.wav" type="audio/wav">
                         </audio>
                         <h5 style="padding-left:15px;">Stress relief</h5>
-
+                        <button id = "hideAddress">Hide Address</button>
+                        <button id = "showAddress">Show Address</button>
+<!--------------->
                     <address style="color:rgb(148, 98, 5);text-align: center;">
                         <p><a href="mailto: enisshallci@gmail.com" style="color:rgb(148, 98, 5);">enisshallci@gmail.com</a> &#9993; </p>
                         <p>Contact us at: <a href="contact.html" style="color:rgb(150, 100, 7)">CONTACT US</a> &larr; <br />
                             1-800-715-HIKE</p>
                         <p>3263 Glenmore DR, Hope Mills, NC USA</p>
                     </address>
+                  
                 </div>
+
+              
+
+              
 
                 <figure class="rocky">
                     <a href="https://www.youtube.com/watch?v=Zsqep7_9_mw" target="_blank"><img src="images/rocky.jpeg" alt="Rocky mountain national park" width="600px" height="350px"></a>
@@ -93,7 +104,7 @@
                          <span id="upper">Sierra Nevada</span> Mountains (home to Yosemite National Park,            <!--<<<<<---Script ka ktu-->       
                              Sequoia-Kings Canyon <abbr title="NATIONAL PAKR" style="color: dodgerblue;">NP</abbr>,
                              Lake Tahoe and more America mountain gems) give way to the beginning of Cascades.The Cascades are a string of volcanic and non volcanic mountains
-              <!--script-->  running on north-south axis from California to British Columbia. <span id = "concatt"class="mountain"> </span>is the most southerly part of the Cascade Range, wich is park of what makes
+              <!--script-->  running on north-south axis from California to British Columbia. <span id = "concatt" class="mountain"> </span>is the most southerly part of the Cascade Range, wich is park of what makes
                              it tremendously unique <abbr title="NATIONAL PARK" style="color: dodgerblue;">NP</abbr>.</p>
                         <br />
 
@@ -216,6 +227,13 @@
     <footer>
         <p style="text-align: center;font-size: 20px;color:#fff; padding-top: 10px;font-style: oblique;">HIKE AND CLIMB 2021 &copy;</p>
     </footer> 
+
+    
+  
+
+    <script src="javascript/explore.js">
+
+    </script>
 
 </body>
 </html>

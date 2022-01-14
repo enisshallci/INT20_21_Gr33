@@ -76,6 +76,7 @@ ul li a#link5{
     
 }
 
+
 /*--------------------------------------*/
     </style>
 </head>
@@ -99,7 +100,28 @@ ul li a#link5{
                 console.log(str);
             </script> -->
     </header>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>    
+        <script type="text/javascript">
+            $(document).ready(function(){
+            
 
+                $("input").focus(function(){
+                    $(this).css("background-color", "#1E90FF");
+                });
+                $("input").blur(function(){
+                    $(this).css("background-color", "#FF4500");
+                });
+
+                $("textarea").focus(function(){
+                    $(this).css("background-color", "#1E90FF");
+                });
+                $("textarea").blur(function(){
+                    $(this).css("background-color", "#FF4500");
+                });
+            
+            });
+        </script>
+ 
 
         <canvas id="Canvass" width="2000" height="200" style="position: absolute;"> Your browser does not support the canvas element.</canvas>
 
@@ -135,13 +157,13 @@ ul li a#link5{
                 <fieldset>
                 <legend style="font-size: 30px;">Contact Form</legend>
                     <label>First name:</label>
-                    <input type="text" id="text1"> 
+                    <input type="text" id="text1" class="input" > 
                     <br /> <br />
                     <label> Last name:</label>
-                    <input type="text">
+                    <input type="text" class="input" >
                     <br /> <br />
                     <label>Email:</label>
-                    <input type="email">
+                    <input type="email" class="input">
                     <br /> <br />
                     <label>Gender:</label>
                     <input type="radio" name="gjinia" value="male">
@@ -150,19 +172,32 @@ ul li a#link5{
                     <label style="font-size: 22px; margin-left: -25px;">Female</label>
                     <br /> <br />
                     <label>Message:</label>
-                    <textarea rows="6" cols="63">
-                        Write your message
-                    </textarea>
+                    <textarea id="MyTextarea" name="text1" rows="6" cols="63" ></textarea>
                     <br /> <br />
-                    <button type="submit" value="Submit">Submit</button>
+                    <button type="button" onclick="validate()">Submit</button>
                 </fieldset>
             </form>
     </section>
 
-<footer>
-    <p style="text-align: center;font-size: 20px;color:#fff; padding-top: 10px;font-style: oblique;     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    ">HIKE AND CLIMB 2021 &copy;</p>
-</footer>
+
+<script type="text/javascript">
+   
+   function validate(){
+
+    var inputs = document.getElementsByClassName("input");
+
+    var regx = /^([a-zA-Z0-9\._]+)@([a-zA-Z0-9])+.([a-z]+)(.[a-z]+)?$/;
+
+    if(inputs[0].value == "" || inputs[1].value == "" || inputs[2].value == "" || document.getElementById("MyTextarea").value == ''){
+        alert("Please fill in all the required fields!");
+    }
+    else if(!inputs[2].value.match(regx)){
+        alert("Please fill in your real email!");
+    }
+    else
+        alert("Your message has been successfully sent");
+   }
+</script>
 
 </body>
 </html>

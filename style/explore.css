@@ -81,6 +81,19 @@ header ul li a#link2{
     padding:18px;
 }
 
+.content1 > button {
+    position: absolute;
+    display: inline-block;
+    margin-left: 600px;
+    margin-top: -20px;
+}
+#hideAddress{
+    position: absolute;
+}
+#showAddress{
+    margin-left: 480px;
+    position:absolute;
+}
 .mountain{
     color:rgb(8, 160, 41);
     font-weight: bold;
