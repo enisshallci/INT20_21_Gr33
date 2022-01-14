@@ -22,7 +22,7 @@
 
         form{
             position: absolute;
-            top:50%;
+            top:60%;
             left:50%;
             transform: translate(-50%,-50%);
             width: 40%;
@@ -33,6 +33,17 @@
             position: absolute;
             color:white;
             top: 20%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        a:hover{
+            color:dodgerblue;
+        }
+        #panel{
+            font-size: 20px;
+            position: absolute;
+            color:white;
+            top: 30%;
             left: 50%;
             transform: translate(-50%,-50%);
         }
@@ -57,12 +68,34 @@
             font-size: 30px;
             width: 100%;
         }
-      
     </style>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>    
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#slide").click(function()
+            {
+                $("#panel").slideToggle("slow");
+                $("#slide").text("Login Form");
+            });
+        });
+
+    </script>
 </head>
 <body>
     <header>
-        <h2>Login Form</h2>
+        <h2 id="slide"><a src="#">Login Form</a></h2>
+        <div id="panel">
+            Find and manage your trips
+            <ul>
+                <li>Reservations for airlines, hotels, vacation rentals, car rentals, restaurants, and train or bus travel</li>
+                <li>Travel research for upcoming trips</li>
+                <li>Suggestions for trip destinations</li>
+                <li>Information from past trips</li>
+                <li>Recent trip activity</li>
+            </ul>
+        </div>
         <form action="#" method="post">
             <fieldset>
             <legend style="color: black; font-size: 30px;">Login</legend>

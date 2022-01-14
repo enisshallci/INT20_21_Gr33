@@ -83,6 +83,8 @@ ul li a#link3{
     </script>
 
     
+
+    
 </head>
 <body>
     <header>
@@ -122,7 +124,13 @@ ul li a#link3{
             <button onclick="datee()" style="color: dodgerblue; padding: 10px 10px;">Current Date and Time</button>
         
             <p id="clickk" style="color:dodgerblue"></p>
+            <br />
+
+            <!-- <button id="location" onclick="getLocation()">Location</button>
+            <p id="pozita"></p> -->
         </div>
+        <br />         <br />
+
         <table id="calendar">
             <thead>
                 <tr>
@@ -224,6 +232,7 @@ ul li a#link3{
                 </tr>
             </tbody>
 
+
             <tfoot>
                 <tr>
                 <td colspan="4" style="text-align:center;"><i>Welcome to our new group! We hope for a long and successful journey with you</i></td>
@@ -236,11 +245,54 @@ ul li a#link3{
             <source src="audio/audio2.wav" type="audio/wav">
         </audio>
 
+        
+        <div id="workers">
+            <p>Count Numbers:<output id="result"></output></p>
+        <button onclick="startWorker()">Start Worker</button>
+        <button onclick="stopWorker()">Stop Worker</button>
+        </div>
     </div>
+
+    <script type="text/javascript">
+        var w;
+        function startWorker(){
+            if(typeOf(Worker) !== "undefined"){
+                if(typeof(w) == "undefined"){
+                    w = new Worker("demo_workers.js");
+                }
+                w.onmessage = function(event){
+                    document.getElementById("result").innerHTML = event.data;
+                };
+            }
+            else{
+                document.getElementById("result").innerHTML = "Sorry, your browser does not support web workers";
+            }
+        }
+        function stopWorker(){
+            w.terminate();
+            w=undefined;
+        }
+    </script>
 
     <footer>
         <p style="text-align: center;font-size: 20px;color:#fff; padding-top: 10px;font-style: oblique;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">HIKE AND CLIMB 2021 &copy;</p>
     </footer>
 
+    <script type="text/javascript">
+
+        const successCallback = (position)=>{
+            console.log(position);
+        };
+        const errorCallback =(error) =>{
+            console.error(error);
+        }
+
+        const watchID = navigator.geolocation.watchPosition(successCallback, errorCallback);
+        
+    </script>
+
 </body>
 </html>
+
+
+

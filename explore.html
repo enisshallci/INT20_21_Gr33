@@ -21,11 +21,19 @@
                 $("address").show();
                 }
                 );
-            
         }
         );
     </script>
 
+    <script>
+        $(document).ready(function(){
+            $("#buttonHide").click(function(){
+                $("#lista").hide("slow",function(){
+                    alert("The list is now hidden");
+                });
+            })
+        });
+    </script>
 
 </head>
 <body onload=" functionUpperCase();functionConcat()">
@@ -110,7 +118,7 @@
 
                     <div id="list-table">
                             <h6 style="font-size: 25px;">Places to visit: </h6>
-                            <ul style="font-size: 18px;"> 
+                            <ul id="lista" style="font-size: 18px;"> 
                                 <li>Summit Lassen Park</li>
                                 <li>Volcanic Features</li>
                                 <li>Cozy Modern Lodging</li>
@@ -118,6 +126,7 @@
                                 <li>Stunning watterfalls</li>
                                 <li>Diversity Of Hikes</li>
                                 </ul>
+      <!----->                      <button id="buttonHide">Hide List</button>
                             <table style="border-spacing: 2px;">
                                 <thead style="background-color: dodgerblue;">
                                     <tr>

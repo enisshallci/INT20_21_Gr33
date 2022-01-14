@@ -35,7 +35,7 @@
             position: absolute;
             color:white;
             top: 20%;
-            left: 50%;
+            left: 40%;
             transform: translate(-50%,-50%);
         }
    
@@ -52,7 +52,7 @@
             
         }
 
-        button{
+        #buttoniKryesor{
             background-color: rgb(5, 163, 76);
             color:black;
             text-align: center;
@@ -60,11 +60,31 @@
             font-size: 30px;
             width: 100%;
         }
+        #animation{
+            position: absolute;
+            top: 28%;
+            left: 38%;
+            transform: translate(-50%,-50%);
+            background-color: rgb(42, 170, 99);
+        }
+    
     </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>    
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $("#animation").click(function(){
+                    var h2 = $("h2");
+                    h2.animate({right:'40px'}, "slow");
+                    h2.animate({fontSize:'6em'}, "slow");
+                });
+            });
+        </script>
+
 </head>
 <body>
     <header>
         <h2>Sign Up</h2>
+        <button id="animation">Start Animation</button>
 
         <form action="#" method="post">
             <fieldset>
@@ -78,7 +98,7 @@
                     <!-- <label><b> Repeat Password:</b></label>
                     <input type="password" placeholder="Password:">
                     <br /> <br /> -->
-                    <button type="button" onclick="validate()" >Sign Up</button>
+                    <button id="buttoniKryesor" type="button" onclick="validate()" >Sign Up</button>
             </fieldset>
         </form>
     </header>

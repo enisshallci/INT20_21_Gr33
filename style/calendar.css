@@ -80,7 +80,15 @@ footer{
     width: 100%;
     background-color:rgb(5, 65, 126);
 } 
-
+#location{
+    padding: 10px;
+    position: absolute;
+    left:48%;
+}
+#pozita{
+    position: absolute;
+    left: 58%;
+}
 a.linkk:link{
     color:green;
 }
@@ -100,6 +108,7 @@ a.linkk:active, a.linkkk:active{
 }
 
 
+
 a.linkkk:link{
     color:dodgerblue;
 }
@@ -117,6 +126,10 @@ a.linkkk:visited{
 audio{
     display: block;
     margin:auto;
+}
+#workers{
+    position: absolute;
+    left: 20%;
 }
 
 svg{
