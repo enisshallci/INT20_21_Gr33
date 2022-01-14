@@ -17,40 +17,44 @@
             background-position:center;
         }
 
+        fieldset{
+            padding-top: 40px;
+
+        }
         form{
+            position: absolute;
             top:50%;
             left:50%;
-        }
+            transform: translate(-50%,-50%);
+            width: 40%;
 
-        h2{
+         }
+
+         h2{
             font-size: 60px;
             position: absolute;
             color:white;
-            top: 32%;
-            left: 48%;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%,-50%);
         }
-
-        form{
-            position: absolute;
-            width: 40%;
-            top: 43%;
-            left: 35%;
-        }
-
+   
         input{
             width: 90%;
             padding: 12px;
             margin-left:25px;
+            
         }
 
         label{
             color:white;
             font-size: 30px;
+            
         }
 
         button{
             background-color: rgb(5, 163, 76);
-            color:white;
+            color:black;
             text-align: center;
             padding:14px 20px;
             font-size: 30px;
@@ -62,22 +66,25 @@
     <header>
         <h2>Sign Up</h2>
 
-        <form>
+        <form action="#" method="post">
             <fieldset>
-                <legend style="color: white; font-size: 30px;">Sign Up</legend>
-                    <label><b>Email:</b></label>
-                    <input type="email" placeholder="email:">
+                <legend style="color: black; font-size: 30px; ">Sign Up</legend>
+                    <label style="background-color: rgb(42, 170, 99); font-weight: bold; color:black"><b>Email:</b></label>
+                    <input class="input" type="email" placeholder="email:">
                     <br /> <br />
-                    <label><b>Password:</b></label>
+                    <label style="background-color: rgb(42, 170, 99); font-weight: bold; color:black"><b>Password:</b></label>
+                    <input class="input" type="password" placeholder="Password:">
+                    <br /> <br />
+                    <!-- <label><b> Repeat Password:</b></label>
                     <input type="password" placeholder="Password:">
-                    <br /> <br />
-                    <label><b> Repeat Password:</b></label>
-                    <input type="password" placeholder="Password:">
-                    <br /> <br />
-                    <button type="submit">Sign Up</button>
+                    <br /> <br /> -->
+                    <button type="button" onclick="validate()" >Sign Up</button>
             </fieldset>
         </form>
     </header>
+
+    <script src="javascript/signup.js"> 
+    </script>
     
 </body>
 </html>
