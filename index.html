@@ -89,6 +89,18 @@ ul li a#link1{
     });
 </script>
 
+<script>
+    $(document).ready(function(){
+        $("#btn1").click(function(){
+            $("#test1").text("Hike and Climb");
+        });
+        $("#btn2").click(function(){
+            $("#test2").html("<i>Hike and Climb</i>");
+
+        });
+    });
+</script>
+
 </head>
 <body>
     <header>
@@ -199,6 +211,9 @@ ul li a#link1{
         <a href="https://www.youtube.com/watch?v=hld4uaO1MDE" target="_blank"> <img src="images/explore1.jpg" alt="Hiking trailer"></a>
     </section>
 
+    <button id="btn1">Set Text</button>
+    <button id="btn2">set Html</button>
+    
         <section id = "content2">
         Hiking is a long, vigorous walk, usually on trails or footpaths in the countryside. Walking for pleasure developed in Europe during the eighteenth century.
         Religious pilgrimages have existed much longer but they involve walking long distances for a spiritual purpose associated with specific religions.
@@ -207,7 +222,9 @@ ul li a#link1{
         The word hiking is also often used in the UK, along with rambling (a slightly old-fashioned term), hillwalking, and fell walking (a term mostly used for hillwalking in northern England). 
         The term bushwalking is endemic to Australia, having been adopted by the Sydney Bush Walkers club in 1927.In New Zealand a long, vigorous walk or hike is called tramping.
         It is a popular activity with numerous hiking organizations worldwide, and studies suggest that all forms of walking have health benefits.The warm sunshine on your face, the sound of the wind rushing through the trees overhead, 
-        and the soft earthy feel of the trail under your boots. Not only are these experiences enjoyable to have, but they’re good for you, too. 
+        and the soft earthy feel of the trail under your boots. Not only are these experiences enjoyable to have, but they’re good for you, too.
+        <p id="test1">This is a paragraph</p>
+        <p id = "test2">This is another paragraph</p>
      </section>
 
     <footer>
